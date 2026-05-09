@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { motion } from "motion/react";
-import { Download } from "lucide-react";
+import {Mail, Download } from "lucide-react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
@@ -73,14 +73,21 @@ const Hero = () => {
                             rel="noopener noreferrer"
                             className="p-3 rounded-full border border-border hover:border-gray-500 hover:bg-gray-600 transition-all"
                         >
-                            <FaGithub/>
+                            <FaGithub size={20}/>
                         </a>
 
                         <a href="https://linkedin.com/kacperrrr2"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="p-3 rounded-full border border-border hover:border-blue-500 hover:bg-blue-600 transition-all">
-                            <FaLinkedin/>
+                            <FaLinkedin size={20}/>
+                        </a>
+
+                        <a href="k4cper.petelicki@gmail.com"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="p-3 rounded-full border border-border hover:border-cyan-500 hover:bg-cyan-600 transition-all">
+                            <Mail size={20}/>
                         </a>
                     </motion.div>
                 </motion.div>
