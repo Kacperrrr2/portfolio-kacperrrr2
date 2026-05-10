@@ -35,7 +35,7 @@ const Hero = () => {
                            </motion.span>
                        </motion.h1>
                         <motion.p
-                            className="text-muted-foreground max-w-lg"
+                            className="text-white max-w-lg"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
