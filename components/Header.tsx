@@ -14,12 +14,20 @@ const Header = () => {
 
     return (
 
-        <header className='fixed top-0 left-0 w-full bg-[#0a0a0a] p-6 text-white z-50'>
+        <header className='fixed top-3 left-1/2 -translate-x-1/2 w-full max-w-4xl bg-zinc-900/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'>
 
 
             <div className='flex items-center justify-between w-full'>
-                <div className='flex items-center gap-4 text-xl font-bold'>
-                    <Image src={Logo} alt='logo'/> Kacper Petelicki
+                <div className='flex items-center gap-1 text-xl font-bold'>
+                    <motion.span
+                        whileHover={{
+                            rotate: [0, 14, -8, 14, -4, 10, 0],
+                            scale: [1, 1.3, 1.1, 1.2, 1],
+                        }}
+                        transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 2 }}
+                    >
+                        <Image src={Logo} alt='logo'/>
+                    </motion.span>    Kacper Petelicki
                 </div>
 
                 <nav className='hidden md:flex flex-row items-center gap-10 text-gray-400'>
