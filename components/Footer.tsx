@@ -10,9 +10,9 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     {/* Copyright */}
                     <p className="text-muted-foreground text-sm flex items-center gap-2">
-                        © {currentYear} Alex Kowalski. Made with{" "}
-                        <Heart size={14} className="fill-[var(--neon-purple)] text-[var(--neon-purple)]" />{" "}
-                        by Alex Kowalski
+                        © {currentYear} Kacper Petelicki. Made with{" "}
+                        <Heart size={14} className="fill-purple-500 text-purple-500" />{" "}
+                        by Kacper Petelicki
                     </p>
 
                     {/* Social Links */}
