@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import {motion} from 'framer-motion';
-import {Mail, MapPinPlus, Phone} from 'lucide-react'
+import {Lightbulb, Mail, MapPinPlus, Phone} from 'lucide-react'
 const Contact = () => {
     return (
         <section id='contact' className='py-24 px-6 bg-muted/30'>
@@ -65,8 +65,20 @@ const Contact = () => {
                             </div>
 
                         </div>
-
+                        <div className="p-6 bg-gradient-to-br from-[var(--neon-purple)]/20 via-[var(--neon-blue)]/20 to-[var(--neon-cyan)]/20 rounded-2xl border border-[var(--neon-purple)]/30">
+                            <p className="text-sm gap-4">
+                                <span>
+                                    <Lightbulb className="text-white"/>
+                                </span>
+                                <strong>Dostępny na freelance</strong>
+                                <br />
+                                Przyjmuję zlecenia na projekty web development. Skontaktuj się, aby omówić Twój projekt!
+                            </p>
+                        </div>
                     </motion.div>
+                    {/* Contact Form */}
+
+
 
                 </div>
             </div>
