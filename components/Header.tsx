@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
 
-        <header className='fixed top-3 left-1/2 -translate-x-1/2 w-full max-w-4xl bg-zinc-900/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'>
+        <header className='sticky top-3 mx-auto w-[95%] max-w-4xl bg-zinc-900/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'>
 
 
             <div className='flex items-center justify-between w-full'>
@@ -34,7 +34,7 @@ const Header = () => {
                     <ul className='flex flex-row items-center gap-10'>
                         {site.map((item, index) => (
                             <li className='relative group hover:text-white' key={index}>
-                                <Link href={`/${item}`}>
+                                <Link href={`#${item}`}>
                                     {item.charAt(0).toUpperCase() + item.slice(1)}
                                     <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
                                 </Link>
