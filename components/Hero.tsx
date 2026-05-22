@@ -76,7 +76,7 @@ const Hero = () => {
                             <FaGithub size={20}/>
                         </a>
 
-                        <a href="https://linkedin.com/kacperrrr2"
+                        <a href="https://www.linkedin.com/in/kacper-petelicki"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="p-3 rounded-full border border-border hover:border-blue-500 hover:bg-blue-600 transition-all">

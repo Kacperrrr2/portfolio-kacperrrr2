@@ -7,14 +7,14 @@ import Image from "next/image";
 import {Menu,X} from "lucide-react"
 import {motion} from "framer-motion";
 
-const site=['home', 'skills', 'porfolio', 'contact']
+const site=['home', 'skills', 'portfolio', 'contact']
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
 
-        <header className='sticky top-3 mx-auto w-[95%] max-w-4xl bg-zinc-900/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'>
+        <header className='sticky md:fixed top-3 left-0 right-0 mx-auto w-[95%] max-w-4xl bg-zinc-950/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'>
 
 
             <div className='flex items-center justify-between w-full'>
@@ -30,7 +30,7 @@ const Header = () => {
                     </motion.span>    Kacper Petelicki
                 </div>
 
-                <nav className='hidden md:flex flex-row items-center gap-10 text-gray-400'>
+                <nav className='hidden md:flex flex-row items-center gap-10 text-gray-400 '>
                     <ul className='flex flex-row items-center gap-10'>
                         {site.map((item, index) => (
                             <li className='relative group hover:text-white' key={index}>
@@ -41,9 +41,9 @@ const Header = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href='/hire-me'>
+                            <Link href='#contact'>
                                 <button className='px-6 py-2 text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors'>
-                                    Hire me
+                                    Współpraca
                                 </button>
                             </Link>
                         </li>

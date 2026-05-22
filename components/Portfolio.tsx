@@ -18,71 +18,36 @@ const Portfolio = () => {
 
     const projects: typeProject[] = [
         {
-            title: "E-Commerce Platform",
-            description: "Kompleksowa platforma e-commerce z systemem płatności, zarządzaniem produktami i panelem administracyjnym.",
-            image: "https://images.unsplash.com/photo-1760536928911-40831dacdbc3?w=800&h=600&fit=crop",
+            title: "Testownik",
+            description: "Pomoc w aplikacji „Testownik”. Stworzona przez studentów Koła Naukowego Solvro, pomaga w nauce dzięki quizom tworzonym przez użytkowników",
+            image: "https://radioluz.pl/wp-content/uploads/2026/01/blog-1-750x422.png",
             tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS"],
-            liveUrl: "https://example.com",
-            githubUrl: "https://github.com/kacperrrr2",
+            liveUrl: "https://testownik.solvro.pl/",
+            githubUrl: "https://github.com/Solvro/web-testownik",
             gradient: "from-purple-500 to-pink-500",
         },
         {
-            title: "Task Management App",
-            description: "Aplikacja do zarządzania projektami i zadaniami z funkcjami współpracy zespołowej i real-time updates.",
-            image: "https://images.unsplash.com/photo-1758611970983-ff9f0ec0b0c0?w=800&h=600&fit=crop",
-            tags: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-            liveUrl: "https://example.com",
-            githubUrl: "https://github.com/kacperrrr2",
-            gradient: "from-blue-500 to-cyan-500",
-        },
-        {
-            title: "Weather Dashboard",
-            description: "Interaktywny dashboard pogodowy z prognozami, mapami i powiadomieniami o ekstremalnych warunkach.",
-            image: "https://images.unsplash.com/photo-1617240016072-d92174e44171?w=800&h=600&fit=crop",
-            tags: ["Vue.js", "OpenWeather API", "Chart.js", "Vite"],
-            liveUrl: "https://example.com",
-            githubUrl: "https://github.com/kacperrrr2",
+            title: "Koktaile ",
+            description: "Zadanie rekrutacyjne frontend do KN Solvro",
+            image: "https://private-user-images.githubusercontent.com/144324382/591802454-9c818709-10af-4c88-898b-a6274d9046c1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzkwMjMwNjUsIm5iZiI6MTc3OTAyMjc2NSwicGF0aCI6Ii8xNDQzMjQzODIvNTkxODAyNDU0LTljODE4NzA5LTEwYWYtNGM4OC04OThiLWE2Mjc0ZDkwNDZjMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUxN1QxMjU5MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYjc2ZjNkZjMxODRmZTEwODcyYjFkYTJjMzE3N2UzNmQ0NDllMWE2NTkzM2IyNWU2MWJiOTkwNjQ1YzI0ZmEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.vrHyl5QVVErqp-ZQ3YtNcGvI7PEG6FYclheCSUTuyRQ",
+            tags: ["Next.js","Shadcn","TanstackQuery", "Tailwind CSS"],
+            liveUrl: "https://cocktails-solvro-frontend-k3xb6bbn5-kacperrrr2s-projects.vercel.app",
+            githubUrl: "https://github.com/Kacperrrr2/cocktails-solvro-frontend",
             gradient: "from-cyan-500 to-blue-500",
         },
-        {
-            title: "Social Media Analytics",
-            description: "Narzędzie do analizy danych z social media z wizualizacjami, raportami i AI-powered insights.",
-            image: "https://images.unsplash.com/photo-1620607845876-214068622f8c?w=800&h=600&fit=crop",
-            tags: ["React", "TypeScript", "Recharts", "Express"],
-            liveUrl: "https://example.com",
-            githubUrl: "https://github.com/kacperrrr2",
-            gradient: "from-purple-500 to-blue-500",
-        },
-        {
-            title: "AI Content Generator",
-            description: "Generator treści wspomagany AI do tworzenia postów blogowych, opisów produktów i treści marketingowych.",
-            image: "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?w=800&h=600&fit=crop",
-            tags: ["Next.js", "OpenAI API", "Prisma", "tRPC"],
-            liveUrl: "https://example.com",
-            githubUrl: "https://github.com/kacperrrr2",
-            gradient: "from-pink-500 to-purple-500",
-        },
-        {
-            title: "Fitness Tracker",
-            description: "Aplikacja mobilna do śledzenia treningów, diety i postępów z personalizowanymi planami treningowymi.",
-            image: "https://images.unsplash.com/photo-1758611970983-ff9f0ec0b0c0?w=800&h=600&fit=crop",
-            tags: ["React Native", "Firebase", "Redux", "Health APIs"],
-            liveUrl: "https://example.com",
-            githubUrl: "https://github.com/kacperrrr2",
-            gradient: "from-green-500 to-emerald-500",
-        },
+
     ];
 
     return (
-        <section id="porfolio" className="py-24 px-6 bg-muted/30">
-            <div className="max-w-7xl mx-auto">
+        <section id="portfolio" className="py-24 px-6 bg-muted/30  ">
+            <div className="max-w-7xl mx-auto md:mt-27 ">
                 <motion.div
                     className="text-center mb-16"
                     initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
                     viewport={{once: true}}
                 >
-                    <h2 className='mb-4'>Moje projekty</h2>
+                    <h2 className='mb-4'>Portfolio</h2>
 
 
                 </motion.div>

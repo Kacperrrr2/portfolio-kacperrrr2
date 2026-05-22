@@ -112,17 +112,17 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="py-24 px-6">
-            <div className="max-w-6xl mx-auto">
+        <section id="skills" className="py-22 px-6 ">
+            <div className="max-w-6xl mx-auto md:mt-29">
                 <motion.div
                     className="text-center mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="mb-4">My Skills</h2>
+                    <h2 className="mb-4">Umiejetności</h2>
                     <p className="text-white max-w-2xl mx-auto">
-                        I have experience in creating full-stack apps
+                        Mam doświadczenie w budowie aplikacji fullstack
                     </p>
                 </motion.div>
 

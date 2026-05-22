@@ -1,13 +1,46 @@
 "use client";
-import React from 'react';
+import {useState} from 'react';
 import {motion} from 'framer-motion';
-import {Lightbulb, Mail, MapPinPlus, Phone} from 'lucide-react'
+import {Lightbulb, Mail, MapPinPlus, Phone, Send} from 'lucide-react'
 const Contact = () => {
+    const [isSending, setIsSending] = useState(false);
+    const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+        const payload = {
+            name: formData.get("name") as string,
+            email: formData.get("email") as string,
+            message: formData.get("message") as string,
+        };
+
+        setIsSending(true);
+        try {
+            const res = await fetch("/api/send", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
+
+            if (res.ok) {
+                setStatus("success");
+                form.reset();
+            } else {
+                setStatus("error");
+            }
+        } catch (err) {
+            setStatus("error");
+        } finally {
+            setIsSending(false);
+        }
+    };
     return (
-        <section id='contact' className='py-24 px-6 bg-muted/30'>
-            <div className='max-w-6xl mx-auto'>
+        <section id='contact' className='pt-20 pb-12 px-6 bg-muted/30 md:scroll-mt-24 '>
+            <div className='max-w-6xl mx-auto '>
                 <motion.div
-                    className="text-center mb-16"
+                    className="text-center md:mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -77,9 +110,77 @@ const Contact = () => {
                         </div>
                     </motion.div>
                     {/* Contact Form */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <form className="space-y-6" onSubmit={handleSubmit}>
+                            <div>
+                                <label htmlFor="name" className="block mb-2">
+                                    Imię
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-[var(--neon-purple)] focus:outline-none transition-colors"
+                                    placeholder="Twoje imię"
+                                    required
+                                />
+                            </div>
 
+                            <div>
+                                <label htmlFor="email" className="block mb-2">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-[var(--neon-purple)] focus:outline-none transition-colors"
+                                    placeholder="twój@email.com"
+                                    required
+                                />
+                            </div>
 
+                            <div>
+                                <label htmlFor="message" className="block mb-2">
+                                    Wiadomość
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows={5}
+                                    className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-[var(--neon-purple)] focus:outline-none transition-colors resize-none"
+                                    placeholder="Opowiedz o swoim projekcie..."
+                                    required
+                                />
+                            </div>
 
+                            <button
+                                type="submit"
+                                disabled={isSending}
+                                className="w-full px-8 py-4 bg-[var(--neon-purple)] hover:bg-[var(--neon-purple)]/80 text-white rounded-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-[var(--neon-purple)]/50 flex items-center justify-center gap-2 disabled:opacity-60"
+                            >
+                                {isSending ? (
+                                    "Wysyłam..."
+                                ) : (
+                                    <>
+                                        <Send size={18} />
+                                        Wyślij wiadomość
+                                    </>
+                                )}
+                            </button>
+
+                            {status === "success" && (
+                                <p className="text-green-500 text-sm">Wiadomość została wysłana!</p>
+                            )}
+                            {status === "error" && (
+                                <p className="text-red-500 text-sm">Coś poszło nie tak, spróbuj ponownie.</p>
+                            )}
+                        </form>
+                    </motion.div>
                 </div>
             </div>
         </section>

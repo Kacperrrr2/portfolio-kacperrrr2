@@ -1,5 +1,4 @@
-// @ts-ignore
-import Resend from "resend";
+import {Resend} from "resend";
 import React from 'react';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -9,7 +8,8 @@ export async function POST(req:Request){
         const body=await req.json();
         const{name,email,message}=body;
         const {data,error}=await resend.emails.send({
-            from: `Klient ${email}`,
+            from: "Kontakt <onboarding@resend.dev>",
+            replyTo: email,
             to: ["k4cper.petelicki@gmail.com"],
             subject: `Wiadomość od ${name} przez formularz kontaktowy`,
             html: `

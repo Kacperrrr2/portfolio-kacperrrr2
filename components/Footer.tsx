@@ -18,7 +18,7 @@ export function Footer() {
                     {/* Social Links */}
                     <div className="flex gap-4">
                         <a
-                            href="https://github.com/kacperrrr2"
+                            href="https://github.com/Kacperrrr2"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-2 rounded-lg hover:bg-[var(--neon-purple)]/10 hover:text-[var(--neon-purple)] transition-all"
@@ -27,7 +27,7 @@ export function Footer() {
                             <FaGithub size={20} />
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/kacper-petelicki/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-2 rounded-lg hover:bg-[var(--neon-blue)]/10 hover:text-[var(--neon-blue)] transition-all"
@@ -36,7 +36,7 @@ export function Footer() {
                             <FaLinkedin size={20} />
                         </a>
                         <a
-                            href="mailto:alex.kowalski@example.com"
+                            href="k4cper.petelicki@gmail.com"
                             className="p-2 rounded-lg hover:bg-[var(--neon-cyan)]/10 hover:text-[var(--neon-cyan)] transition-all"
                             aria-label="Email"
                         >
