@@ -14,7 +14,12 @@ const Header = () => {
 
     return (
 
-        <header className='sticky md:fixed top-3 left-0 right-0 mx-auto w-[95%] max-w-4xl bg-zinc-950/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'>
+        <motion.header
+            className='sticky md:fixed top-3 left-0 right-0 mx-auto w-[95%] max-w-4xl bg-zinc-950/70 backdrop-blur-md p-6 text-white z-50 rounded-3xl border border-purple-500'
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.3 }}
+        >
 
 
             <div className='flex items-center justify-between w-full'>
@@ -77,7 +82,7 @@ const Header = () => {
                     </ul>
                 </motion.div>
             )}
-        </header>
+        </motion.header>
     );
 };
 
