@@ -45,9 +45,9 @@ const Contact = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="mb-4">Skontaktuj się ze mną</h2>
+                    <h2 className="mb-4">Contact me</h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                        Masz projekt w głowie? Napisz do mnie, a omówimy szczegóły współpracy
+                        Have a project in mind? Send me a message, and we’ll discuss the details of our collaboration.
                     </p>
 
                 </motion.div>
