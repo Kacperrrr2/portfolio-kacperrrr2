@@ -21,7 +21,7 @@ const Hero = () => {
                         animate={{opacity:1, y:0}}
                         transition={{delay:0.4}}
                        >
-                           Cześć, jestem <span className="text-[var(--neon-purple)]">Kacper Petelicki</span>
+                           Hi, I’m <span className="text-[var(--neon-purple)]">Kacper Petelicki</span>
                            <motion.span
                                className="inline-block text-3xl"
                                animate={{
@@ -40,7 +40,7 @@ const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                         >
-                            Jestem Full-Stack Developerem i pasjonatem dobrego designu. Zamieniam pomysły w nowoczesne i szybkie aplikacje internetowe, które użytkownicy kochają.
+                            I’m a Full-Stack Developer with a passion for great design. I turn ideas into modern, fast web applications that users love
                         </motion.p>
                     </div>
                     <motion.div
@@ -56,10 +56,6 @@ const Hero = () => {
                             Write to me
                         </Link>
 
-                        <button className="px-8 py-3 border border-border hover:border-[var(--neon-blue)] rounded-lg transition-all hover:scale-105 flex items-center gap-2">
-                            <Download size={18} />
-                            Download CV
-                        </button>
                     </motion.div>
                     <motion.div
                         className="flex gap-4"

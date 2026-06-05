@@ -60,7 +60,7 @@ const Contact = () => {
                         className="space-y-8"
                     >
                         <div>
-                            <h3 className="mb-6">Informacje kontaktowe</h3>
+                            <h3 className="mb-6">Contact Info</h3>
                             <div className="space-y-4">
                                 <div className="flex items-center gap-4 group">
                                     <div className="p-3 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-600 group-hover:text-white transition-all">
@@ -80,7 +80,7 @@ const Contact = () => {
                                     </div>
 
                                     <div>
-                                        <p className="text-sm text-muted-foreground">Telefon</p>
+                                        <p className="text-sm text-muted-foreground">Phone number</p>
                                         <p>+48 576 308 931</p>
                                     </div>
 
@@ -91,7 +91,7 @@ const Contact = () => {
                                         <MapPinPlus size={20} />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-muted-foreground">Lokalizacja</p>
+                                        <p className="text-sm text-muted-foreground">Localization</p>
                                         <p>Wrocław, Kielce Polska</p>
                                     </div>
                                 </div>
@@ -103,9 +103,9 @@ const Contact = () => {
                                 <span>
                                     <Lightbulb className="text-white"/>
                                 </span>
-                                <strong>Dostępny na freelance</strong>
+                                <strong>Available for freelance work</strong>
                                 <br />
-                                Przyjmuję zlecenia na projekty web development. Skontaktuj się, aby omówić Twój projekt!
+                                I’m available for web development projects. Get in touch to discuss your project!
                             </p>
                         </div>
                     </motion.div>
@@ -118,14 +118,14 @@ const Contact = () => {
                         <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block mb-2">
-                                    Imię
+                                    Name
                                 </label>
                                 <input
                                     type="text"
                                     id="name"
                                     name="name"
                                     className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-[var(--neon-purple)] focus:outline-none transition-colors"
-                                    placeholder="Twoje imię"
+                                    placeholder="Your name"
                                     required
                                 />
                             </div>
@@ -139,21 +139,21 @@ const Contact = () => {
                                     id="email"
                                     name="email"
                                     className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-[var(--neon-purple)] focus:outline-none transition-colors"
-                                    placeholder="twój@email.com"
+                                    placeholder="your@email.com"
                                     required
                                 />
                             </div>
 
                             <div>
                                 <label htmlFor="message" className="block mb-2">
-                                    Wiadomość
+                                    Message
                                 </label>
                                 <textarea
                                     id="message"
                                     name="message"
                                     rows={5}
                                     className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-[var(--neon-purple)] focus:outline-none transition-colors resize-none"
-                                    placeholder="Opowiedz o swoim projekcie..."
+                                    placeholder="Write about your project"
                                     required
                                 />
                             </div>
@@ -164,11 +164,11 @@ const Contact = () => {
                                 className="w-full px-8 py-4 bg-[var(--neon-purple)] hover:bg-[var(--neon-purple)]/80 text-white rounded-lg transition-all hover:scale-105 hover:shadow-lg hover:shadow-[var(--neon-purple)]/50 flex items-center justify-center gap-2 disabled:opacity-60"
                             >
                                 {isSending ? (
-                                    "Wysyłam..."
+                                    "Sending..."
                                 ) : (
                                     <>
                                         <Send size={18} />
-                                        Wyślij wiadomość
+                                        Send message
                                     </>
                                 )}
                             </button>

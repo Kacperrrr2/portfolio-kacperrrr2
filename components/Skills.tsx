@@ -13,14 +13,14 @@ const Skills = () => {
             name: string;
             image: string;
         }[];
-        color: string; // np. '#a855f7' (purple-500), '#3b82f6' (blue-500)
+        color: string;
     };
 
     const skillCategories: Skills[] = [
         {
             icon: Palette,
             title: 'Design',
-            description: 'Tworzę estetyczne interfejsy użytkownika z dbałością o każdy detal.',
+            description: 'I create aesthetic user interfaces with attention to every detail',
             skills: [
                 {
                     name: 'Figma',
@@ -48,7 +48,7 @@ const Skills = () => {
         {
             icon: Code2,
             title: 'Frontend',
-            description: 'Buduję nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii.',
+            description: 'I build modern web applications using the latest technologies',
             skills: [
                 {
                     name: 'React',
@@ -80,7 +80,7 @@ const Skills = () => {
         {
             icon: Server,
             title: 'Backend',
-            description: 'Tworzę skalowalne i bezpieczne rozwiązania serwerowe.',
+            description: 'I create scalable and secure server-side solutions',
             skills: [
                 {
                     name: 'Node.js',
@@ -120,9 +120,9 @@ const Skills = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="mb-4">Umiejetności</h2>
+                    <h2 className="mb-4">Skills</h2>
                     <p className="text-white max-w-2xl mx-auto">
-                        Mam doświadczenie w budowie aplikacji fullstack
+                        I have experience building full-stack applications
                     </p>
                 </motion.div>
 

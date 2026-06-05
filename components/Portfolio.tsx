@@ -20,7 +20,7 @@ const Portfolio = () => {
     const projects: typeProject[] = [
         {
             title: "Testownik",
-            description: "Pomoc w aplikacji „Testownik”. Stworzona przez studentów Koła Naukowego Solvro, pomaga w nauce dzięki quizom tworzonym przez użytkowników",
+            description: "Contributed to the “Testownik” app, created by students from the Solvro student research club, which supports learning through user-created quizzes",
             image: "https://radioluz.pl/wp-content/uploads/2026/01/blog-1-750x422.png",
             category: "WebDev",
             tags: ["Next.js", "Stripe", "MongoDB", "Tailwind CSS"],
@@ -29,8 +29,8 @@ const Portfolio = () => {
             gradient: "from-purple-500 to-pink-500",
         },
         {
-            title: "Koktaile ",
-            description: "Zadanie rekrutacyjne frontend do KN Solvro",
+            title: "Cocktails app",
+            description: "Frontend recruitment assignment for KN Solvro",
             image: "https://private-user-images.githubusercontent.com/144324382/591802454-9c818709-10af-4c88-898b-a6274d9046c1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzkwMjMwNjUsIm5iZiI6MTc3OTAyMjc2NSwicGF0aCI6Ii8xNDQzMjQzODIvNTkxODAyNDU0LTljODE4NzA5LTEwYWYtNGM4OC04OThiLWE2Mjc0ZDkwNDZjMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUxN1QxMjU5MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYjc2ZjNkZjMxODRmZTEwODcyYjFkYTJjMzE3N2UzNmQ0NDllMWE2NTkzM2IyNWU2MWJiOTkwNjQ1YzI0ZmEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.vrHyl5QVVErqp-ZQ3YtNcGvI7PEG6FYclheCSUTuyRQ",
             category: "WebDev",
             tags: ["Next.js","Shadcn","TanstackQuery", "Tailwind CSS"],
