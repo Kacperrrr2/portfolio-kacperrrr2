@@ -38,6 +38,17 @@ const Portfolio = () => {
             githubUrl: "https://github.com/Kacperrrr2/cocktails-solvro-frontend",
             gradient: "from-cyan-500 to-blue-500",
         },
+        {
+            title: "Puzzle game",
+            description: "High School competition",
+            image:"puzzle_game.jpg",
+            category: "GameDev",
+            tags: ["ReactJS","CSS"],
+            liveUrl: "",
+            githubUrl: "",
+            gradient: "from-cyan-500 to-blue-500",
+        }
+        ,
 
 
     ];
