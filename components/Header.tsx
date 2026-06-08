@@ -48,7 +48,7 @@ const Header = () => {
                         <li>
                             <Link href='#contact'>
                                 <button className='px-6 py-2 text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-colors'>
-                                    Współpraca
+                                    Collaboration
                                 </button>
                             </Link>
                         </li>
